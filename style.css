@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+:root{
+    --t1-color-theme: #1D1A31;
+    --t2-color-theme: #4d2d52;
+    --t3-color-theme: #9A4C95;
+    --t4-color-theme: #F08CAE;
+    --t5-color-theme: #F8C537;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Major Mono Display', Times, serif;
+}
+
+body{
+    background-color: var(--t1-color-theme);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    background-color: var(--t3-color-theme);
+    border: 1px solid var(--t5-color-theme);
+    color: var(--t5-color-theme);
+    border-radius: 3rem;
+    padding: 1rem;
+
+    rotate: -45deg;
+
+}
+
+p{
+    margin: 12px auto 24px;
+}
+
+    .container{
+        background-color: var(--t2-color-theme);
+        box-shadow: 0 0 50px 100px var(--t2-color-theme);
+        display: grid;
+        grid-template-columns: repeat(3,minmax(250px, 450px));
+        grid-template-rows: repeat(3,minmax(200px, 400px));
+
+        padding: 2rem;
+
+        grid-gap: 2rem;
+        width: 70vw;
+        height: 70vh;
+
+        rotate: 45deg;
+        border-radius: 20rem;
+
+    }
+
+    .container div{
+        background: var(--t1-color-theme);
+        background: linear-gradient(135deg, var(--t1-color-theme) 0%, var(--t2-color-theme) 50%, var(--t3-color-theme) 100%);
+        border-radius: 2rem 8rem;
+        transition: all 3s;
+    }
+
+    .container div:hover{
+        background: var(--t1-color-theme);
+        background: linear-gradient(45deg, var(--t1-color-theme) 0%, var(--t2-color-theme) 42%, var(--t3-color-theme) 100%);
+        
+    }
+
+    .container div:nth-child(5){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 20px;
+    }
